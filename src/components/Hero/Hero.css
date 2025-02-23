@@ -1,0 +1,47 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.slide-content {
+  background-color: rgba(0, 0, 0, 1); /* Semi-transparent overlay */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+}
+
+.slide-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.slide-content p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #feb47b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #ff7e5f;
+}
