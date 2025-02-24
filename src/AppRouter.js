@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './components/Home/Home'; // Home page
+import Home from './Home/Home'; // Home page
 import WebDevelopment from './WebDevelopment/WebDevelopment'; // Web Development page
 import RMS from './RMS/RMS'; // RMS page (adjacent to components)
 import HMS from './HMS/HMS'; // RMS page (adjacent to components)

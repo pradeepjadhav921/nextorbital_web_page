@@ -1,40 +1,100 @@
+/* General styles for the contact section */
 .contact {
-    padding: 50px 10%;
-    text-align: center;
-    background-color: #f9f9f9;
+  padding: 50px 0; /* Add padding to the top and bottom */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+/* Container for the two sections */
+.contact-container {
+  display: flex; /* Use Flexbox for layout */
+  max-width: 1200px; /* Set a max width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 0 20px; /* Add some padding to the sides */
+}
+
+/* Styles for both sections (REQUEST FOR DEMO and Contact Us) */
+.demo-section,
+.contact-section {
+  flex: 1; /* Each section takes up 50% of the container */
+  padding: 20px; /* Add padding inside each section */
+}
+
+/* Styles for the REQUEST FOR DEMO section */
+.demo-section {
+  background-color: #fff; /* White background */
+  border-right: 1px solid #ddd; /* Add a border between sections */
+}
+
+/* Styles for the Contact Us section */
+.contact-section {
+  background-color: #f1f1f1; /* Light gray background */
+}
+
+/* Heading styles */
+h2 {
+  font-size: 2rem; /* Large font size for headings */
+  margin-bottom: 20px; /* Add space below the heading */
+  color: #333; /* Dark text color */
+}
+
+h3 {
+  font-size: 1.5rem; /* Medium font size for subheadings */
+  margin-bottom: 10px; /* Add space below the subheading */
+  color: #555; /* Slightly lighter text color */
+}
+
+/* Paragraph styles */
+p {
+  font-size: 1rem; /* Normal font size */
+  color: #555; /* Slightly lighter text color */
+  margin-bottom: 10px; /* Add space below each paragraph */
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column; /* Stack form elements vertically */
+  gap: 15px; /* Add space between form elements */
+}
+
+/* Input and textarea styles */
+input,
+textarea {
+  padding: 10px; /* Add padding inside inputs */
+  font-size: 1rem; /* Normal font size */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+}
+
+textarea {
+  resize: vertical; /* Allow vertical resizing */
+  min-height: 100px; /* Set a minimum height */
+}
+
+/* Button styles */
+button {
+  padding: 10px 20px; /* Add padding inside the button */
+  font-size: 1rem; /* Normal font size */
+  color: #fff; /* White text color */
+  background-color: #007bff; /* Blue background color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column; /* Stack sections vertically */
   }
-  
-  .contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
+
+  .demo-section {
+    border-right: none; /* Remove the right border */
+    border-bottom: 1px solid #ddd; /* Add a border at the bottom */
   }
-  
-  .contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .contact input,
-  .contact textarea {
-    padding: 10px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .contact button {
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    color: #fff;
-    background-color: #feb47b;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .contact button:hover {
-    background-color: #ff7e5f;
-  }
+}

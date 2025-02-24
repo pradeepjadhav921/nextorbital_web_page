@@ -27,7 +27,7 @@ const Services = () => {
         </div>
         <div className="service-item3" onClick={() => handleNavigation('/hms')}>
           <img src="assets\logo_HMS.jpg" alt="Hospital manegment system" />
-          <h3>UHospital manegment system</h3>
+          <h3>Hospital manegment system</h3>
           <p>We design user-friendly interfaces.</p>
         </div>
       </div>

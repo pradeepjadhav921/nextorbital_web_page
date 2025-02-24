@@ -1,38 +1,55 @@
 .header {
-    position: sticky; /* Makes the header sticky */
-    top: 0; /* Stick to the top of the page */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 5%;
-    background-color: #333;
-    color: #fff;
-    z-index: 1000; /* Ensures the header stays above other content */
-    height: 60px; /*Set a fixed height for the header*/
-    /* min-height: 60px; Ensure height doesn't grow */
-     box-sizing: border-box; /*Include padding in height calculation */
-    /* margin: 0; Remove default margin */
-  }
+  position: sticky; /* Makes the header sticky */
+  top: 0; /* Stick to the top of the page */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  padding: 10px 10%;
+  background-color: #ffffff;
+  color: #fff;
+  z-index: 1000; /* Ensures the header stays above other content */
+  height: 60px; /* Set a fixed height for the header */
+  box-sizing: border-box; /* Include padding in height calculation */
+}
+
+.logo {
+  display: flex;
+  align-items: center; /* Align logo and text vertically */
+  position: absolute;
+  left: 3%; /* Adjust left positioning */
+}
+
+.logo img {
+  height: 45px;
+  margin-right: 10px;
+}
+.navbar {
+  display: flex;
+  justify-content: end; /* Move navigation to the right */
+  flex-grow: 1; /* Allow navbar to take up remaining space */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.navbar ul li {
+  display: flex;
+  align-items: center; /* Ensure text is aligned properly */
+}
+
+.navbar ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem; /* Adjust font size if needed */
+}
+
+.navbar ul li a:hover {
+  color: #000000;
   
-  .logo img {
-    height: 50px;
-  }
-  
-  .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-  }
-  
-  .navbar ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.9rem; /* Adjust font size if needed */
-  }
-  
-  .navbar ul li a:hover {
-    color: #feb47b;
-  }
+}

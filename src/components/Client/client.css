@@ -1,0 +1,56 @@
+#stats-section {
+    background-color: #0072C6; /* SAP Blue */
+    padding: 60px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.stats-wrapper ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.stats-wrapper li {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border-left: 1px solid #fff;
+}
+
+.stats-wrapper li:first-child {
+    border-left: none;
+}
+
+.stats-wrapper h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+
+.stats-wrapper h1 span {
+    display: block;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.stats-wrapper h4 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+}
+
+.stats-wrapper h5 {
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+    margin-top: 5px;
+}
