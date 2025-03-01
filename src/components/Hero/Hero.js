@@ -45,11 +45,11 @@ const Hero = () => {
               className="slide"
               style={{ backgroundImage: `url(${slide.image})` }}
             >
-              <div className="slide-content">
-                <h1>{slide.title}</h1>
-                <p>{slide.description}</p>
-                <button className="cta-button">Get Started</button>
-              </div>
+              {/* <div className="slide-content"> */}
+                {/* <h1>{slide.title}</h1> */}
+                {/* <p>{slide.description}</p> */}
+                {/* <button className="cta-button">Get Started</button> */}
+              {/* </div> */}
             </div>
           </div>
         ))}

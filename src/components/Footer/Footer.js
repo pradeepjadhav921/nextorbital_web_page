@@ -9,7 +9,7 @@ const Footer = () => {
         <a href="https://twitter.com">Twitter</a>
         <a href="https://linkedin.com">LinkedIn</a>
       </div>
-      <p>&copy; 2023 Adroit Infotech. All rights reserved.</p>
+      <p>&copy; 2025 NextOrbital Solutions pvt ltd. All rights reserved.</p>
     </footer>
   );
 };

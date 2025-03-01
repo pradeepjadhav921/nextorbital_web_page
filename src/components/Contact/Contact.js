@@ -9,10 +9,10 @@ const Contact = () => {
         <div className="demo-section">
           <h2>REQUEST FOR DEMO</h2>
           <form>
-            <input type="text" placeholder="Your Name" required />
-            <input type="Mobile No." placeholder="Mobile No." required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="Your Requirement" required></textarea>
+            <input type="text" placeholder="Your Name*" required />
+            <input type="Mobile No." placeholder="Mobile No.*" required />
+            <input type="email" placeholder="Your Email*" required />
+            <textarea placeholder="Your Requirement*" required></textarea>
             <button type="submit">Send Message</button>
           </form>
         </div>

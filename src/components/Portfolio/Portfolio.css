@@ -3,11 +3,26 @@
     text-align: center;
     background-color: #f9f9f9;
   }
+
+  /* Hover Effect */
+.portfolio-item1:hover, 
+.portfolio-item2:hover, 
+.portfolio-item3:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
   
   .portfolio h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
   }
+
+.portfolio-grid p1 {
+  font-size: 1rem;
+  color: #2b00ff;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
   
   .portfolio-grid {
     display: flex;

@@ -18,16 +18,19 @@ const Portfolio = () => {
       <h2>Our Portfolio</h2>
       <div className="portfolio-grid">
         <div className="portfolio-item1" onClick={() => handleNavigation('/web-development')}>
-          <img src={process.env.PUBLIC_URL + 'assets/web_logo.png'} alt="Web Development"/>
-          <p>Project 1</p>
+          <img src={process.env.PUBLIC_URL + 'assets/website-development.png'} alt="Web Development"/>
+          <p>Website Development Services</p>
+          <span> <p1>Click Here</p1> for more details</span>
         </div>
         <div className="portfolio-item2" onClick={() => handleNavigation('/rms')}>
-          <img src={process.env.PUBLIC_URL + 'assets/POS_logo.png'} alt="Restorant Management System"/>
-          <p>Project 2</p>
+          <img src={process.env.PUBLIC_URL + 'assets/POS_logo-removebg-previewv1.png'} alt="Restorant Management System"/>
+          <p>Restorant Management Services</p>
+          <span> <p1>Click Here</p1> for more details</span>
         </div>
         <div className="portfolio-item3" onClick={() => handleNavigation('/hms')}>
           <img src={process.env.PUBLIC_URL + 'assets/logo_HMS-Photoroom.png'} alt="Hospital management System"/>
-          <p>Project 3</p>
+          <p>Hospital Management Services</p>
+          <span> <p1>Click Here</p1> for more details</span>
         </div>
       </div>
     </section>
