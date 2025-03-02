@@ -1,21 +1,114 @@
+/* General styles for the about section */
 .about {
-  padding: 50px;
-  
-  background-color: #fff;
-  width: 100%;
-  box-sizing: border-box;
+  padding: 50px 20px; /* Add padding */
+  max-width: 1200px; /* Set a max width */
+  margin: 0 auto; /* Center the section */
 }
 
-.about h2 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 20px;
+/* Section with image layout */
+.section-with-image {
+  display: flex;
+  align-items: center; /* Vertically center items */
+  gap: 40px; /* Space between image and text */
+  margin-bottom: 60px; /* Add space between sections */
 }
 
-.about p {
-  font-size: 1.2rem;
-  text-align: left;
-  color: #666;
-  max-width: 100%;
-  margin: 0;
+/* Reverse layout for "Why NextOrbital" section */
+.section-with-image.reverse {
+  flex-direction: row-reverse; /* Image on the right */
+}
+
+/* Image container styles */
+.image-container {
+  flex: 1; /* Take up 50% of the space */
+  padding-top: 80px; /* Add top padding */
+}
+
+.image-container img {
+width: 90%; /* Reduce the image size */
+height: auto; /* Maintain aspect ratio */
+border-radius: 10px; /* Rounded corners */
+position: relative;
+padding: 20px;
+background-color: #ffffff; /* White background */
+border: 1px solid #ddd; /* Light border */
+border-radius: 10px; /* Rounded corners */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Base shadow */
+transform-style: preserve-3d; /* Enable 3D transformations */
+transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* Image container styles */
+.image-container2 {
+  flex: 1; /* Take up 50% of the space */
+  padding-top: 80px; /* Add top padding */
+}
+
+.image-container2 img {
+  width: 90%; /* Reduce the image size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  position: relative;
+  padding: 20px;
+  background-color: #ffffff; /* White background */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Base shadow */
+  transform-style: preserve-3d; /* Enable 3D transformations */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+/* Text container styles */
+.text-container {
+  flex: 1; /* Take up 50% of the space */
+}
+
+.text-container h2 {
+  font-size: 2rem; /* Large font size for headings */
+  margin-bottom: 20px; /* Add space below the heading */
+  color: #333; /* Dark text color */
+  text-align: center; /* Center the text */
+}
+
+.text-container p {
+  font-size: 1rem; /* Normal font size */
+  color: #555; /* Slightly lighter text color */
+  line-height: 1.6; /* Improve readability */
+}
+
+/* About Us section styles */
+.about-us {
+  margin-top: 60px; /* Add space above the section */
+}
+
+.about-us h2 {
+  font-size: 2rem; /* Large font size for headings */
+  margin-bottom: 20px; /* Add space below the heading */
+  color: #000000; /* Dark text color */
+}
+
+.about-us p {
+  font-size: 1rem; /* Normal font size */
+  color: #555; /* Slightly lighter text color */
+  line-height: 1.6; /* Improve readability */
+}
+
+
+@media (max-width: 768px) {
+  .section-with-image {
+    flex-direction: column; /* Stack image and text vertically */
+  }
+
+  .section-with-image.reverse {
+    flex-direction: column; /* Stack image and text vertically */
+  }
+
+  .image-container,
+  .text-container {
+    flex: none; /* Reset flex for mobile */
+    width: 100%; /* Full width on mobile */
+  }
+
+  .image-container img {
+    margin-bottom: 20px; /* Add space below the image */
+  }
 }

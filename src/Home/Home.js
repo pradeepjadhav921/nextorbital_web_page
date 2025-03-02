@@ -4,7 +4,7 @@ import Hero from '../components/Hero/Hero';
 import Client from '../components/Client/client';
 import About from '../components/About/About';
 import Portfolio from '../components/Portfolio/Portfolio';
-import Testimonials from '../components/Testimonials/Testimonials';
+// import Testimonials from '../components/Testimonials/Testimonials';
 import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
 import './Home.css';
@@ -17,7 +17,7 @@ const Home = () => {
       <Portfolio />
       <Client />
       <About />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Contact />
       <Footer />
     </div>

@@ -1,11 +1,15 @@
 import React from 'react';
+import Header from '../components/Header/Header';
+import Footer from '../components/Footer/Footer';
+import Hero from '../Web_componants/WebHero/WebHero';
 import './WebDevelopment.css';
 
 const WebDevelopment = () => {
   return (
-    <div className="web-development">
-      <h1>Web Development</h1>
-      <p>We build responsive and scalable web applications.</p>
+    <div className="WebDevelopment">
+      <Header />
+      <Hero />
+      <Footer />
     </div>
   );
 };

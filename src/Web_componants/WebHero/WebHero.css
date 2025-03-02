@@ -1,0 +1,74 @@
+.hero {
+  position: relative;
+  height: 90vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+#myVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: auto;
+  min-height: 30%;
+  width: auto;
+  height: auto;
+  z-index: -1; /* Place the video behind other content */
+  transform: translate(-50%, -60%); /* Center the video */
+  object-fit: cover; /* Ensure the video covers the entire area */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1; /* Place content above the video */
+  text-align: center;
+  color: #fff;
+  padding-top: 5%; /* Adjust padding to shift content upwards */
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-shadow: rgb(0, 0, 0) 3px 5px; /* Add a text shadow */
+}
+
+.hero-content p1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #00ffff; /* Highlight the slogan text */
+  font-weight: bold;
+}
+
+
+.cta-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.slogan {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffcc00;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: zoomIn 2s ease-in-out;
+}

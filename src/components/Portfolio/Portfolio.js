@@ -18,7 +18,7 @@ const Portfolio = () => {
       <h2>Our Portfolio</h2>
       <div className="portfolio-grid">
         <div className="portfolio-item1" onClick={() => handleNavigation('/web-development')}>
-          <img src={process.env.PUBLIC_URL + 'assets/website-development.png'} alt="Web Development"/>
+          <img src={process.env.PUBLIC_URL + 'assets/Web-Dvelopment-Company-in-India.png'} alt="Web Development"/>
           <p>Website Development Services</p>
           <span> <p1>Click Here</p1> for more details</span>
         </div>
