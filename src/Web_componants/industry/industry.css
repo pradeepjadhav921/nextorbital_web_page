@@ -1,0 +1,53 @@
+.industries-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 8px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.grid-item:hover {
+    transform: perspective(1000px) rotateY(10deg) rotateX(10deg) translateZ(20px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.grid-item {
+    position: relative;
+    background: linear-gradient(145deg, #f4f4f4, #e0e0e0);
+    overflow: hidden;
+}
+
+.grid-item::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+    transform: rotate(45deg);
+    transition: opacity 0.3s;
+    opacity: 0;
+}
+
+.grid-item:hover::before {
+    opacity: 1;
+}
