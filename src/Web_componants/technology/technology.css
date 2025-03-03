@@ -1,0 +1,71 @@
+/* Technologies.css */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .container h1 {
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  
+  .box img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .box h3 {
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+  }
+  
+  /* Flip animation */
+  .box.flip {
+    transform: rotateY(180deg);
+  }
+  
+  .box .front,
+  .box .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .box .front {
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  
+  .box .back {
+    transform: rotateY(180deg);
+    background-color: #f4f4f4;
+    border-radius: 8px;
+  }
