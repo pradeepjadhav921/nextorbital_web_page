@@ -1,21 +1,21 @@
 import React from 'react';
 import Header from '../components/Header/Header';
-import Hero from '../components/Hero/Hero';
-import Services from '../components/Services/Services';
-import About from '../components/About/About';
-import Portfolio from '../components/Portfolio/Portfolio';
-import Testimonials from '../components/Testimonials/Testimonials';
-import Contact from '../components/Contact/Contact';
+import Hero from '../HMS_componants/HRS_hero/hero.js';
 import Footer from '../components/Footer/Footer';
+import Letestupdate from '../HMS_componants/Latest_Update/letest.js';
+import WhyUs from '../HMS_componants/Why_us/why_us.js';
 import './HMS.css';
 
-const Home = () => {
+const HMS = () => {
   return (
-    <div className="Hospital manegment system">
-      <h1>Hospital manegment system</h1>
-      <p>We build responsive and scalable web applications.</p>
+    <div className="HMS">
+      <Header />
+      <Hero />
+      <Letestupdate />
+      <WhyUs />
+      <Footer />
     </div>
   );
 };
 
-export default Home;
+export default HMS;

@@ -1,0 +1,23 @@
+.img {
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    color: white;
+    text-align: left;
+    padding: 20px;
+}
+
+.img h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.img p {
+    font-size: 1.5rem;
+    max-width: 700px;
+}
