@@ -1,21 +1,23 @@
 import React from 'react';
 import Header from '../components/Header/Header';
-import Hero from '../components/Hero/Hero';
-import Services from '../components/Services/Services';
-import About from '../components/About/About';
-import Portfolio from '../components/Portfolio/Portfolio';
-import Testimonials from '../components/Testimonials/Testimonials';
-import Contact from '../components/Contact/Contact';
+import Hero from '../RMS_componants/RMS_hero/hero';
 import Footer from '../components/Footer/Footer';
+import Features from '../RMS_componants/POS_Features/features';
+import Outlet_types from '../RMS_componants/Outlet_types/outlet_type';
+import Contact from '../components/Contact/Contact';
 import './RMS.css';
 
-const Home = () => {
+const RMS = () => {
   return (
-    <div className="Restorant Management System">
-      <h1>Web Development</h1>
-      <p>We build responsive and scalable web applications.</p>
+    <div className="RMS">
+      <Header />
+      <Hero />
+      <Features />
+      <Outlet_types />
+      <Contact />
+      <Footer />
     </div>
   );
 };
 
-export default Home;
+export default RMS;

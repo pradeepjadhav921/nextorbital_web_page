@@ -1,0 +1,26 @@
+.RMS {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.RMS > * {
+    flex-shrink: 0;
+}
+
+.RMS > Header {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.RMS > Hero {
+    flex-grow: 1;
+    background-color: #e9ecef;
+    padding: 40px;
+}
+
+.RMS > Footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
