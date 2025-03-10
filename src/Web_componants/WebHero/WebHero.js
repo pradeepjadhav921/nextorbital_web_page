@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import './WebHero.css';
 
 const Hero = () => {
   const videoSrc = process.env.PUBLIC_URL + '/video/Zenkins-Home-Hero-Banner.webm';
-  // List of slogans
-  const slogans = [
+
+  // Memoize the slogans array
+  const slogans = useMemo(() => [
     "Unleashing Creative Designs with Every Click",
     "Designs Tailored to Dazzle and Inspire",
     "Transforming Digital Dreams into Reality",
@@ -25,7 +26,7 @@ const Hero = () => {
     "Unlock the Power of Exceptional Web Design",
     "Where Imagination Meets Functionality",
     "Enhancing Your Online Presence with Unique Designs"
-  ];
+  ], []); // Empty dependency array means it will only be created once
 
   // State to track the current slogan
   const [currentSlogan, setCurrentSlogan] = useState(slogans[0]);
@@ -38,10 +39,14 @@ const Hero = () => {
         const nextIndex = (currentIndex + 1) % slogans.length; // Loop back to the start
         return slogans[nextIndex];
       });
-    }, 4000); // Change slogan every 1 second
+    }, 3000); // Change slogan every 4 seconds
 
     return () => clearInterval(interval); // Cleanup interval on unmount
-  }, [slogans]);
+  }, [slogans]); // slogans is now stable and won't cause unnecessary re-renders
+
+  const navigateToContact = () => {
+    window.location.href = '#contact';
+  };
 
   return (
     <div className="hero">
@@ -55,7 +60,7 @@ const Hero = () => {
         <p key={currentSlogan} className="slogan">
           {currentSlogan}
         </p>
-        <button className="cta-button">Get Started</button>
+        <button className="cta-button" onClick={navigateToContact}>Get Started</button>
       </div>
     </div>
   );

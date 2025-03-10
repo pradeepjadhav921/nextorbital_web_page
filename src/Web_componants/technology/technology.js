@@ -1,6 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHtml5, faCss3, faJs } from '@fortawesome/free-brands-svg-icons';
 import './technology.css'; // Import the CSS file
 
 const Technologies = () => {

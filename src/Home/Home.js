@@ -3,7 +3,7 @@ import Header from '../components/Header/Header';
 import Hero from '../components/Hero/Hero';
 import Client from '../components/Client/client';
 import About from '../components/About/About';
-import Portfolio from '../components/Portfolio/Portfolio';
+import Services from '../components/Portfolio/Portfolio';
 // import Testimonials from '../components/Testimonials/Testimonials';
 import Contact from '../components/Contact/Contact';
 import Footer from '../components/Footer/Footer';
@@ -14,7 +14,7 @@ const Home = () => {
     <div className="home">
       <Header />
       <Hero />
-      <Portfolio />
+      <Services />
       <Client />
       <About />
       {/* <Testimonials /> */}
