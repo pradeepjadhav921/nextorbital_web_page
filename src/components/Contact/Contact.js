@@ -10,10 +10,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'service_xxx', // Replace with your Service ID
-        'template_xxx', // Replace with your Template ID
+        'service_6r3cnne', // Replace with your Service ID
+        'template_ikcohyn', // Replace with your Template ID
         form.current,
-        'user_xxx' // Replace with your User ID
+        '4nbuMGGU2LBvz7d2y' // Replace with your User ID
       )
       .then(
         (result) => {
@@ -37,7 +37,7 @@ const Contact = () => {
         <div className="demo-section">
           <h2>REQUEST FOR DEMO</h2>
           <form ref={form} onSubmit={sendEmail}>
-            <input type="text" name="user_name" placeholder="Your Name*" required />
+            <input type="text" name="from_name" placeholder="Your Name*" required />
             <input type="text" name="user_phone" placeholder="Mobile No.*" required />
             <input type="email" name="user_email" placeholder="Your Email*" required />
             <textarea name="message" placeholder="Your Requirement*" required></textarea>
@@ -49,7 +49,7 @@ const Contact = () => {
         <div className="contact-section">
           <h2>Contact Us</h2>
           <h3>Address</h3>
-          <p>15th Floor morarji mill compound</p>
+          {/* <p>15th Floor morarji mill compound</p> */}
           <p>Kandivali East, Mumbai. 400101</p>
           <h3>Phone</h3>
           <p>919403029424</p>

@@ -20,7 +20,7 @@ const Hero = () => {
 
   const slides = [
     {
-      image: '/HMS_crop.png',
+      image: '/android-chrome-512x512.png',
       title: 'Welcome to Adroit Infotech',
       description: 'Your trusted partner for innovative IT solutions.',
     },
