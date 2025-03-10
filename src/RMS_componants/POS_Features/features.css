@@ -10,29 +10,29 @@
 
 /* Title Section */
 .title {
-  text-align: left;
+  text-align: center;
   padding-top: 50px;
 }
 
 .title h1 {
-  font-size: 1.5em;
+  font-size: 0.7em;
   color: #ff0404;
-  text-align: left;
+  text-align: center;
   margin-bottom: 0px; /* Reduced margin */
 }
 
 .title p {
-  font-size: 1.2em;
+  font-size: 1em;
   color: #000000;
-  text-align: left;
+  text-align: center;
   margin-bottom: 0px; /* Reduced margin */
   font-weight: bold;
 }
 
 .title p2 {
-  font-size: 1em;
+  font-size: 0.8em;
   color: #666;
-  text-align: left;
+  text-align: center;
   margin-bottom: 0px; /* Reduced margin */
 }
 
