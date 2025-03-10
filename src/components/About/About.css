@@ -1,16 +1,16 @@
 /* General styles for the about section */
 .about {
-  padding: 50px 20px; /* Add padding */
-  max-width: 1200px; /* Set a max width */
+  padding: 20px 10px; /* Adjust padding for smaller screens */
+  max-width: 100%; /* Full width on smaller screens */
   margin: 0 auto; /* Center the section */
 }
 
 /* Section with image layout */
 .section-with-image {
   display: flex;
-  align-items: center; /* Vertically center items */
-  gap: 40px; /* Space between image and text */
-  margin-bottom: 60px; /* Add space between sections */
+  align-items: flex-start; /* Align items to the start to prevent overlap */
+  gap: 0px; /* Adjust space between image and text */
+  margin-bottom: 30px; /* Adjust space between sections */
 }
 
 /* Reverse layout for "Why NextOrbital" section */
@@ -21,77 +21,81 @@
 /* Image container styles */
 .image-container {
   flex: 1; /* Take up 50% of the space */
-  padding-top: 80px; /* Add top padding */
+  padding-top: 60px; /* Adjust top padding */
+  padding-left: 40px; /* Adjust top padding */
+}
+.image-container img {
+  width: 90%; /* Full width on smaller screens */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners */
+  position: relative;
+  padding: 10px 10px 10px 10px; /* Adjust padding, add padding to the left side */
+  background-color: #ffffff; /* White background */
+  border: 1px solid #ddd; /* Light border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Base shadow */
+  transform-style: preserve-3d; /* Enable 3D transformations */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  margin: 0 auto; /* Center align the image */
 }
 
-.image-container img {
-width: 90%; /* Reduce the image size */
-height: auto; /* Maintain aspect ratio */
-border-radius: 10px; /* Rounded corners */
-position: relative;
-padding: 20px;
-background-color: #ffffff; /* White background */
-border: 1px solid #ddd; /* Light border */
-border-radius: 10px; /* Rounded corners */
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Base shadow */
-transform-style: preserve-3d; /* Enable 3D transformations */
-transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+/* Text container styles */
+.text-container {
+  flex: 1; /* Take up 50% of the space */
+  /* padding: 10px; Add padding to prevent overlap */
+}
+
+.text-container h2 {
+  font-size: 2rem; /* Adjust font size for headings */
+  margin-bottom: 10px; /* Adjust space below the heading */
+  color: #333; /* Dark text color */
+  text-align: center; /* Center the text */
+  font-weight: bold; /* Make the heading bold */
+}
+
+.text-container p {
+  font-size: 1.2rem; /* Adjust font size */
+  color: #555; /* Slightly lighter text color */
+  line-height: 1.4; /* Improve readability */
 }
 
 /* Image container styles */
 .image-container2 {
   flex: 1; /* Take up 50% of the space */
-  padding-top: 80px; /* Add top padding */
+  padding-top: 40px; /* Adjust top padding */
+  padding-left: 100px; /* Adjust top padding */
 }
 
 .image-container2 img {
-  width: 90%; /* Reduce the image size */
+  width: 80%; /* Full width on smaller screens */
   height: auto; /* Maintain aspect ratio */
   border-radius: 10px; /* Rounded corners */
   position: relative;
-  padding: 20px;
   background-color: #ffffff; /* White background */
   border: 1px solid #ddd; /* Light border */
-  border-radius: 10px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Base shadow */
   transform-style: preserve-3d; /* Enable 3D transformations */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-}
-/* Text container styles */
-.text-container {
-  flex: 1; /* Take up 50% of the space */
+  margin: 0 auto; /* Center align the image */
 }
 
-.text-container h2 {
-  font-size: 2rem; /* Large font size for headings */
-  margin-bottom: 20px; /* Add space below the heading */
-  color: #333; /* Dark text color */
-  text-align: center; /* Center the text */
-}
 
-.text-container p {
-  font-size: 1rem; /* Normal font size */
-  color: #555; /* Slightly lighter text color */
-  line-height: 1.6; /* Improve readability */
-}
 
 /* About Us section styles */
 .about-us {
-  margin-top: 60px; /* Add space above the section */
+  margin-top: 30px; /* Adjust space above the section */
 }
 
 .about-us h2 {
-  font-size: 2rem; /* Large font size for headings */
-  margin-bottom: 20px; /* Add space below the heading */
+  font-size: 1.5rem; /* Adjust font size for headings */
+  margin-bottom: 10px; /* Adjust space below the heading */
   color: #000000; /* Dark text color */
 }
 
 .about-us p {
-  font-size: 1rem; /* Normal font size */
+  font-size: 1.2rem; /* Adjust font size */
   color: #555; /* Slightly lighter text color */
-  line-height: 1.6; /* Improve readability */
+  line-height: 1.4; /* Improve readability */
 }
-
 
 @media (max-width: 768px) {
   .section-with-image {
@@ -106,9 +110,21 @@ transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
   .text-container {
     flex: none; /* Reset flex for mobile */
     width: 100%; /* Full width on mobile */
+    padding-right: 10px; /* Adjust top padding */
   }
 
   .image-container img {
+    margin-bottom: 20px; /* Add space below the image */
+  }
+
+  .image-container2,
+  .text-container2 {
+    flex: none; /* Reset flex for mobile */
+    width: 100%; /* Full width on mobile */
+    padding-right: 10px; /* Adjust top padding */
+  }
+
+  .image-container2 img {
     margin-bottom: 20px; /* Add space below the image */
   }
 }

@@ -2,14 +2,12 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Use useNavigate instead of useHistory
 import './Portfolio.css';
 
-
-
 const Portfolio = () => {
   // const history = useHistory();
   const navigate = useNavigate(); // Use useNavigate for navigation
 
   const handleNavigation = (path) => {
-    // history.push(path);
+    window.scrollTo(0, 0); // Scroll to the top of the page
     navigate(path); // Navigate to the specified path
   };
 

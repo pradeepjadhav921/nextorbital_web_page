@@ -53,3 +53,14 @@
   color: #000000;
   
 }
+
+@media (max-width: 600px) {
+  .logo img {
+    height: 20px; /* Reduce image height for mobile screens */
+  }
+
+  .navbar ul li a {
+    font-size: 0.5rem; /* Reduce font size for mobile screens */
+  }
+}
+

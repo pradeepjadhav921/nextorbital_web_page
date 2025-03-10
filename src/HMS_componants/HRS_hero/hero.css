@@ -10,7 +10,6 @@
     text-align: left;
     padding: 20px;
 }
-
 .img h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -20,4 +19,20 @@
 .img p {
     font-size: 1.5rem;
     max-width: 700px;
+}
+
+@media (max-width: 768px) {
+    .img {
+        height: 40vh;
+        padding: 10px;
+    }
+
+    .img h1 {
+        font-size: 1.5rem;
+    }
+
+    .img p {
+        font-size: 0.8rem;
+        max-width: 100%;
+    }
 }

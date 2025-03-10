@@ -1,18 +1,46 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import './Contact.css';
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_xxx', // Replace with your Service ID
+        'template_xxx', // Replace with your Template ID
+        form.current,
+        'user_xxx' // Replace with your User ID
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert('Message sent successfully!');
+        },
+        (error) => {
+          console.log(error.text);
+          alert('Failed to send the message, please try again.');
+        }
+      );
+
+    // Reset the form after submission
+    e.target.reset();
+  };
+
   return (
     <section id="contact" className="contact">
       <div className="contact-container">
         {/* Request for Demo Section */}
         <div className="demo-section">
           <h2>REQUEST FOR DEMO</h2>
-          <form>
-            <input type="text" placeholder="Your Name*" required />
-            <input type="Mobile No." placeholder="Mobile No.*" required />
-            <input type="email" placeholder="Your Email*" required />
-            <textarea placeholder="Your Requirement*" required></textarea>
+          <form ref={form} onSubmit={sendEmail}>
+            <input type="text" name="user_name" placeholder="Your Name*" required />
+            <input type="text" name="user_phone" placeholder="Mobile No.*" required />
+            <input type="email" name="user_email" placeholder="Your Email*" required />
+            <textarea name="message" placeholder="Your Requirement*" required></textarea>
             <button type="submit">Send Message</button>
           </form>
         </div>
@@ -21,12 +49,12 @@ const Contact = () => {
         <div className="contact-section">
           <h2>Contact Us</h2>
           <h3>Address</h3>
-          <p>1234 Elm St.</p>
-          <p>Springfield, IL 62701</p>
+          <p>15th Floor morarji mill compound</p>
+          <p>Kandivali East, Mumbai. 400101</p>
           <h3>Phone</h3>
-          <p>555-555-5555</p>
+          <p>919403029424</p>
           <h3>Email</h3>
-          <p>info@example.com</p>
+          <p>info@nextorbitals.in</p>
         </div>
       </div>
     </section>
