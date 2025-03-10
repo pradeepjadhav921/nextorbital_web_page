@@ -19,7 +19,7 @@ const Header = () => {
           <li><a href="#about">About</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><button className="demo-button" onClick={handleDemoButtonClick}>Request For Demo</button></li>
+          <li><button className="demo-button small" onClick={handleDemoButtonClick}>Request For Demo</button></li>
         </ul>
       </nav>
     </header>
