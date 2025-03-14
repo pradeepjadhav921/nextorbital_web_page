@@ -1,70 +1,131 @@
 .hero {
   position: relative;
+  width: 100%;
   height: 100vh;
   overflow: hidden;
 }
 
-.slide {
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
+.hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 97.5%; /* Full width on mobile */
+  height: 100%;
+  object-fit: cover;
 }
 
-.slide-content {
-  background-color: rgba(0, 0, 0, 0); /* Semi-transparent overlay */
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 800px;
+.hero-text {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  text-align: left;
+  color: white;
+  z-index: 1;
 }
 
-.slide-content h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+.hero-text h1 {
+  font-size: 3rem; /* Default font size */
+  margin: 10px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  position: absolute;
+  transform: translateX(-100%);
+  animation: slideInOut 9s infinite;
 }
 
-.slide-content p {
-  font-size: 1.5rem;
-  margin-bottom: 30px;
+.hero-text h1:nth-child(1) {
+  animation-delay: 0s;
 }
 
-.cta-button {
-  padding: 10px 20px;
-  font-size: 1.2rem;
-  color: #fff;
-  background-color: #feb47b;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.hero-text h1:nth-child(2) {
+  animation-delay: 3s;
 }
 
-.cta-button:hover {
-  background-color: #ff7e5f;
+.hero-text h1:nth-child(3) {
+  animation-delay: 6s;
 }
 
-/* Media Queries for Mobile Screens */
+.green-bold {
+  color: rgb(1, 207, 69);
+  font-weight: bold;
+}
+
+.white-plain {
+  color: white;
+  font-weight: normal;
+}
+
+.plain-text {
+  position: absolute;
+  bottom: 10%; /* Adjust distance from the bottom */
+  left: 10%; /* Adjust distance from the left */
+  color: white;
+  font-size: 1.2rem; /* Default font size */
+  z-index: 1;
+  max-width: 400px; /* Adjust width as needed */
+}
+
+.plain-text p {
+  margin: 0;
+  color: white;
+  text-shadow: 2px 2px 4px rgb(172, 172, 172);
+  white-space: nowrap; /* Prevent text wrapping */
+  font-size: 1.5rem; /* Default text size */
+}
+
+/* Slide-in and slide-out animation */
+@keyframes slideInOut {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  40% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
-  .slide-content {
-    padding: 15px;
-    max-width: 90%;
+  .hero-text {
+    top: 5%; /* Adjust top position for mobile */
+    left: 5%; /* Adjust left position for mobile */
   }
 
-  .slide-content h1 {
-    font-size: 2rem;
-    margin-bottom: 15px;
+  .hero-text h1 {
+    font-size: 2rem; /* Smaller font size for mobile */
   }
 
-  .slide-content p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+  .plain-text {
+    bottom: 5%; /* Adjust bottom position for mobile */
+    left: 5%; /* Adjust left position for mobile */
+    max-width: 90%; /* Allow more width for mobile */
   }
 
-  .cta-button {
-    padding: 8px 16px;
-    font-size: 1rem;
+  .plain-text p {
+    font-size: 1.2rem; /* Smaller font size for mobile */
+    white-space: normal; /* Allow text wrapping on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.5rem; /* Even smaller font size for very small screens */
+  }
+
+  .plain-text p {
+    font-size: 1rem; /* Smaller font size for very small screens */
   }
 }

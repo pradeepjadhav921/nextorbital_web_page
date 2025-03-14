@@ -1,60 +1,32 @@
 import React from 'react';
-import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Hero.css';
 
 const Hero = () => {
-  const settings = {
-    dots: false, // Hide dots
-    infinite: true, // Enable infinite looping
-    speed: 1000, // Transition speed in milliseconds
-    slidesToShow: 1, // Number of slides to show at a time
-    slidesToScroll: 1, // Number of slides to scroll at a time
-    autoplay: true, // Enable autoplay
-    autoplaySpeed: 3000, // Autoplay interval in milliseconds
-    fade: true, // Enable fade transition
-    cssEase: 'linear', // Transition timing function
-    arrows: false, // Hide navigation arrows
-  };
-
-  const slides = [
-    {
-      image: '/android-chrome-512x512.png',
-      title: 'Welcome to Adroit Infotech',
-      description: 'Your trusted partner for innovative IT solutions.',
-    },
-    {
-      image: '/POS_PNG.png',
-      title: 'We Build Scalable Solutions',
-      description: 'Delivering high-quality software for your business.',
-    },
-    {
-      image: '/WEB_PNG.png',
-      title: 'Transforming Ideas into Reality',
-      description: 'Innovative solutions for a digital world.',
-    },
-  ];
+  const videoSrc1 = process.env.PUBLIC_URL + '/video/Xebia-Scaled-Gen-Ai-bg-video.mp4';
 
   return (
-    <section className="hero">
-      <Slider {...settings}>
-        {slides.map((slide, index) => (
-          <div key={index}>
-            <div
-              className="slide"
-              style={{ backgroundImage: `url(${slide.image})` }}
-            >
-              {/* <div className="slide-content"> */}
-                {/* <h1>{slide.title}</h1> */}
-                {/* <p>{slide.description}</p> */}
-                {/* <button className="cta-button">Get Started</button> */}
-              {/* </div> */}
-            </div>
-          </div>
-        ))}
-      </Slider>
-    </section>
+    <div className="hero">
+      <video src={videoSrc1} autoPlay loop muted />
+      <div className="hero-text">
+        <h1>
+          <span className="green-bold">Hospital Management</span>
+          <span className="white-plain"> System</span>
+        </h1>
+        <h1>
+          <span className="green-bold">Restaurant Management</span>
+          <span className="white-plain"> System</span>
+        </h1>
+        <h1>
+          <span className="green-bold">Web Development</span>
+          <span className="white-plain"> Services</span>
+        </h1>
+      </div>
+      <dev className="plain-text">
+        <p>We design and build industry-leading web-based products that delight your customers!!!</p>
+      </dev>
+    </div>
   );
 };
 

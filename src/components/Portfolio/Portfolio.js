@@ -22,7 +22,7 @@ const Portfolio = () => {
         </div>
         <div className="portfolio-item2" onClick={() => handleNavigation('/rms')}>
           <img src={process.env.PUBLIC_URL + 'assets/POS_logo-removebg-previewv1.png'} alt="Restorant Management System"/>
-          <p>Restorant Management Services</p>
+          <p>Restaurant Management Services</p>
           <span> <p1>Click Here</p1> for more details</span>
         </div>
         <div className="portfolio-item3" onClick={() => handleNavigation('/hms')}>

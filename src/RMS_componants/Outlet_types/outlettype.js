@@ -1,9 +1,8 @@
 // src/components/OutletTypes.js
 import React from 'react';
-import './outlet_type.css'; // We'll create this CSS file next
+import './outlettype.css'; // We'll create this CSS file next
 
 const OutletTypes = () => {
-
 
   return (
     <div className="outlet-container">
