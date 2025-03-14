@@ -4,12 +4,12 @@
   display: flex;
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
-  padding: 10px 10%;
   background-color: #ffffff;
   color: #fff;
   z-index: 1000; /* Ensures the header stays above other content */
   height: 60px; /* Set a fixed height for the header */
   box-sizing: border-box; /* Include padding in height calculation */
+  width: 100%; /* Make header width match the width of the webpage */
 }
 
 .logo {
@@ -23,6 +23,7 @@
   height: 45px;
   margin-right: 10px;
 }
+
 .navbar {
   display: flex;
   justify-content: end; /* Move navigation to the right */
@@ -51,8 +52,8 @@
 
 .navbar ul li a:hover {
   color: #000000;
-  
 }
+
 .navbar ul li button {
   background-color: #007500; /* Button background color */
   color: #ffffff; /* Button text color */
@@ -67,6 +68,7 @@
 .demo-button:hover {
   background-color: #0056b3; /* Darker background on hover */
 }
+
 @media (max-width: 600px) {
   .logo img {
     height: 20px; /* Reduce image height for mobile screens */
@@ -102,4 +104,3 @@
     font-weight: bold; /* Bold text */
   }
 }
-
