@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.css';
 
 const Header = () => {
-const home = "http://localhost:3000/";
+  const home = "/"; // Use relative path
 
   const handleDemoButtonClick = () => {
     document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });

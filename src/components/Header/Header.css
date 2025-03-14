@@ -1,5 +1,5 @@
 .header {
-  position: sticky; /* Makes the header sticky */
+  position: sticky; 
   top: 0; /* Stick to the top of the page */
   display: flex;
   justify-content: center; /* Center content horizontally */
@@ -10,6 +10,7 @@
   height: 60px; /* Set a fixed height for the header */
   box-sizing: border-box; /* Include padding in height calculation */
   width: 100%; /* Make header width match the width of the webpage */
+  padding: 10px; /* Optional: Add padding */
 }
 
 .logo {

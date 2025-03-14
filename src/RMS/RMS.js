@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../components/Header/Header';
 import RMSHero from '../RMS_componants/RMS_hero/RMSHero';
 import Features from '../RMS_componants/POS_Features/features';
@@ -8,6 +8,9 @@ import Footer from '../components/Footer/Footer';
 import './RMS.css';
 
 const RMS = () => {
+  useEffect(() => {
+    document.title = 'NextOrbitals Restaurant Management System'; // Set the title
+  }, []);
   return (
     <div className="RMS">
       <Header />

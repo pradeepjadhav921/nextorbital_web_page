@@ -1,20 +1,25 @@
 .hero {
   position: relative;
   height: 90vh; /* Full viewport height */
-  overflow: hidden;
+  overflow: hidden; /* Prevent scrollbars */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  z-index: 1000; /* Ensures the header stays above other content */
+  box-sizing: border-box; /* Include padding in height calculation */
+  width: 100%; /* Make header width match the width of the webpage */
 }
 
 #myVideo {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: auto;
-  min-height: 30%;
-  width: auto;
-  height: auto;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensure video covers the full width */
+  height: 100%; /* Ensure video covers the full height */
+  object-fit: cover; /* Ensure the video covers the entire area without distortion */
   z-index: -1; /* Place the video behind other content */
-  transform: translate(-50%, -60%); /* Center the video */
-  object-fit: cover; /* Ensure the video covers the entire area */
 }
 
 .hero-content {

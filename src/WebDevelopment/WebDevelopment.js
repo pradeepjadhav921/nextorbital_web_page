@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../components/Header/Header';
 import Hero from '../Web_componants/WebHero/WebHero';
 import Industry from '../Web_componants/industry/industry';
@@ -8,6 +8,10 @@ import Footer from '../components/Footer/Footer';
 import './WebDevelopment.css';
 
 const WebDevelopment = () => {
+  useEffect(() => {
+    document.title = 'NextOrbitals Web Development'; // Set the title
+  }, []);
+
   return (
     <div className="WebDevelopment">
       <Header />
