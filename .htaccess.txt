@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+  # Enable Rewrite Engine
+  RewriteEngine On
+
+  # Redirect HTTP to HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteCond %{HTTP:X-Forwarded-SSL} !on
+  RewriteCond %{HTTP_HOST} ^nextorbitals\.in$ [OR]
+  RewriteCond %{HTTP_HOST} ^www\.nextorbitals\.in$
+  RewriteRule ^(.*)$ https://nextorbitals.in/$1 [R=301,L]
+
+  # Handle React Router Routes
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
