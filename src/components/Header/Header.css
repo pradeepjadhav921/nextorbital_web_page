@@ -70,19 +70,39 @@
   background-color: #0056b3; /* Darker background on hover */
 }
 
-@media (max-width: 600px) {
-  .logo img {
-    height: 20px; /* Reduce image height for mobile screens */
+@media (max-width: 450px) {
+  .header {
+    position: sticky; 
+    top: 0; /* Stick to the top of the page */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    background-color: #ffffff;
+    color: #fff;
+    z-index: 1000; /* Ensures the header stays above other content */
+    height: 40px; /* Set a fixed height for the header */
+    box-sizing: border-box; /* Include padding in height calculation */
+    width: 100%; /* Make header width match the width of the webpage */
+    padding: 1px; /* Optional: Add padding */
   }
 
-  .navbar ul li a {
-    font-size: 0.5rem; /* Reduce font size for mobile screens */
+  .logo {
+    display: flex;
+    align-items: center; /* Align logo and text vertically */
+    position: absolute;
+    left: 1%; /* Adjust left positioning */
   }
+  
+  .logo img {
+    height: 16px;
+    margin-right: 2px;
+  }
+
 
   .navbar ul {
     list-style: none;
     display: flex;
-    gap: 5px; /* Reduced gap between list items */
+    gap: 4px; /* Reduced gap between list items */
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
   }
@@ -91,17 +111,18 @@
     color: #000000;
     text-decoration: none;
     font-weight: bold;
-    font-size: 0.5rem; /* Adjust font size if needed */
+    font-size: 0.7rem;
+    /* line-height: 0.6rem; Increase line height to prevent text merging with the image */
   }
 
   .navbar ul li button {
     background-color: #007500; /* Button background color */
     color: #ffffff; /* Button text color */
     border: none; /* Remove default border */
-    padding: 2px 5px; /* Reduce padding */
+    padding: 10px 5px; /* Reduce padding */
     border-radius: 3px; /* Rounded corners */
     cursor: pointer; /* Pointer cursor on hover */
-    font-size: 0.5rem; /* Reduce font size */
+    font-size: 0.6rem; /* Reduce font size */
     font-weight: bold; /* Bold text */
   }
 }

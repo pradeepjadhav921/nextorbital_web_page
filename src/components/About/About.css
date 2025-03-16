@@ -1,9 +1,8 @@
 /* General styles for the about section */
-.about {
-  padding: 20px 10px; /* Adjust padding for smaller screens */
-  max-width: 100%; /* Full width on smaller screens */
-  margin: 0 auto; /* Center the section */
-}
+/* .about {
+  max-width: 100%; 
+  margin: 0 auto; 
+} */
 
 /* Section with image layout */
 .section-with-image {
@@ -20,28 +19,24 @@
 
 /* Image container styles */
 .image-container {
-  flex: 1; /* Take up 50% of the space */
-  padding-top: 60px; /* Adjust top padding */
-  padding-left: 40px; /* Adjust top padding */
+  flex: 0.8; /* Take up 50% of the space */
+  padding: 100px 20px 0px 0px; /* top right bottom left */
 }
+
 .image-container img {
-  width: 90%; /* Full width on smaller screens */
+  width: 100%; /* Full width on smaller screens */
   height: auto; /* Maintain aspect ratio */
   border-radius: 10px; /* Rounded corners */
   position: relative;
-  padding: 10px 10px 10px 10px; /* Adjust padding, add padding to the left side */
-  background-color: #ffffff; /* White background */
   border: 1px solid #ddd; /* Light border */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Base shadow */
   transform-style: preserve-3d; /* Enable 3D transformations */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-  margin: 0 auto; /* Center align the image */
+  /* margin: 0 auto; */
 }
 
 /* Text container styles */
 .text-container {
   flex: 1; /* Take up 50% of the space */
-  /* padding: 10px; Add padding to prevent overlap */
 }
 
 .text-container h2 {
@@ -56,13 +51,13 @@
   font-size: 1.2rem; /* Adjust font size */
   color: #555; /* Slightly lighter text color */
   line-height: 1.4; /* Improve readability */
+  text-align: justify; /* Justify text to fit and fill the paragraph */
 }
 
 /* Image container styles */
 .image-container2 {
   flex: 1; /* Take up 50% of the space */
-  padding-top: 40px; /* Adjust top padding */
-  padding-left: 100px; /* Adjust top padding */
+  padding: 0px 0px 0px 70px; /* top right bottom left */
 }
 
 .image-container2 img {
@@ -70,12 +65,9 @@
   height: auto; /* Maintain aspect ratio */
   border-radius: 10px; /* Rounded corners */
   position: relative;
-  background-color: #ffffff; /* White background */
   border: 1px solid #ddd; /* Light border */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Base shadow */
   transform-style: preserve-3d; /* Enable 3D transformations */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
-  margin: 0 auto; /* Center align the image */
 }
 
 
@@ -95,36 +87,30 @@
   font-size: 1.2rem; /* Adjust font size */
   color: #555; /* Slightly lighter text color */
   line-height: 1.4; /* Improve readability */
+  text-align: justify; /* Justify text to fit and fill the paragraph */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 450px) {
   .section-with-image {
     flex-direction: column; /* Stack image and text vertically */
   }
 
   .section-with-image.reverse {
-    flex-direction: column; /* Stack image and text vertically */
+    flex-direction: column; /* Ensure reverse also stacks vertically */
   }
 
-  .image-container,
+  .image-container, .image-container2 {
+    padding: 0px 0; /* Adjust padding for mobile */
+    width: 100%; /* Full width on mobile */
+  }
+
+  .image-container img, .image-container2 img {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 0px; /* Add space below the image */
+  }
+
   .text-container {
-    flex: none; /* Reset flex for mobile */
     width: 100%; /* Full width on mobile */
-    padding-right: 10px; /* Adjust top padding */
-  }
-
-  .image-container img {
-    margin-bottom: 20px; /* Add space below the image */
-  }
-
-  .image-container2,
-  .text-container2 {
-    flex: none; /* Reset flex for mobile */
-    width: 100%; /* Full width on mobile */
-    padding-right: 10px; /* Adjust top padding */
-  }
-
-  .image-container2 img {
-    margin-bottom: 20px; /* Add space below the image */
+    padding: 0px; /* Adjust padding for mobile */
   }
 }

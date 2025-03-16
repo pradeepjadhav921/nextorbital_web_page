@@ -1,0 +1,50 @@
+/* src/Careers.css */
+.careers {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .careers-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .careers h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .careers p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .careers strong {
+    color: #000;
+  }
+  
+  .careers ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .careers ul li {
+    margin-bottom: 10px;
+  }
+  
+  .careers a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .careers a:hover {
+    text-decoration: underline;
+  }

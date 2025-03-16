@@ -4,6 +4,7 @@ import Home from './Home/Home'; // Home page
 import WebDevelopment from './WebDevelopment/WebDevelopment'; // Web Development page
 import RMS from './RMS/RMS'; // RMS page (adjacent to components)
 import HMS from './HMS/HMS'; // RMS page (adjacent to components)
+import Careers from './careerspage/careers'; // RMS page (adjacent to components)
 
 const AppRouter = () => {
   return (
@@ -13,9 +14,11 @@ const AppRouter = () => {
         <Route path="/web-development" element={<WebDevelopment />} /> {/* Web Development page */}
         <Route path="/rms" element={<RMS />} /> {/* RMS page */}
         <Route path="/hms" element={<HMS />} /> {/* HMS page */}
+        <Route path="/careers" element={<Careers />} /> {/* HMS page */}
       </Routes>
     </Router>
   );
+
 };
 
 export default AppRouter;

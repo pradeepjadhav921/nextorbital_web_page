@@ -98,35 +98,11 @@
   }
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-
-  .hero-text {
-    top: 5%; /* Adjust top position for mobile */
-    left: 5%; /* Adjust left position for mobile */
-  }
-
-  .hero-text h1 {
-    font-size: 2rem; /* Smaller font size for mobile */
-  }
-
-  .plain-text {
-    bottom: 5%; /* Adjust bottom position for mobile */
-    left: 5%; /* Adjust left position for mobile */
-    max-width: 90%; /* Allow more width for mobile */
-  }
-
-  .plain-text p {
-    font-size: 1.2rem; /* Smaller font size for mobile */
-    white-space: normal; /* Allow text wrapping on mobile */
-  }
-}
-
-@media (max-width: 480px) {
+@media (max-width: 450px) {
   .hero {
     overflow: hidden; /* Ensure no overflow */
-    width: 100vw; /* Ensure full viewport width */
-    height: 100vh; /* Ensure full viewport height */
+    width: 0vw; /* Ensure full viewport width */
+    height: 0vh; /* Ensure full viewport height */
     overflow-x: hidden;
   }
 

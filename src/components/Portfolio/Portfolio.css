@@ -50,39 +50,19 @@
   color: #333;
 }
 
-/* Media Queries for Mobile Screens */
-@media (max-width: 768px) {
-  .portfolio {
-    padding: 30px 5%;
-  }
 
-  .portfolio h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-  }
 
-  .portfolio-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .portfolio-item1, .portfolio-item2, .portfolio-item3 {
-    width: 80%;
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 480px) {
+@media (max-width: 450px) {
   .portfolio {
     padding: 20px 2%;
   }
 
   .portfolio h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 10px;
   }
 
   .portfolio-item1, .portfolio-item2, .portfolio-item3 {
-    width: 100%;
+    width: 90%;
   }
 }

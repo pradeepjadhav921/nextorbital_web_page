@@ -29,7 +29,7 @@ const Header = () => {
           <li><a href={home}>Home</a></li>
           <li><a href={`${home}#portfolio`}>Services</a></li>
           <li><a href={`${home}#about`}>About</a></li>
-          <li><a href={home}>Careers</a></li>
+          <li><a href="/careers">Careers</a></li>
           <li><a href="#contact" onClick={(e) => handleNavLinkClick(e, 'contact')}>Contact</a></li>
           <li><button className="demo-button small" onClick={handleDemoButtonClick}>Request For Demo</button></li>
         </ul>
